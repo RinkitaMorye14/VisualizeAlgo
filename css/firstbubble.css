@@ -1,0 +1,79 @@
+:root{
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+.chat{
+    background: #271f1f;
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27); 
+    background: linear-gradient(to right, #1565C0, #b92b27); 
+    color: var(--text-color);
+    height:100vh;
+}
+form h1{
+    font-size:4vh;
+    margin-bottom: 2vh;
+}
+form p{
+    margin: 3vh;
+}
+form input{
+    position: relative;
+    left: 20px;
+    font-size: 2vh;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: var(--tran-04);
+}
+section form input[type="text"]
+{
+    background-color: #fff;
+    width:50vw;
+    height: 5vh;
+    outline: none;
+    padding: 0 25px;
+    /* border-radius: 25px 0 0 25px; */
+}
+section form input[type="button"]
+{
+    position: relative;
+    left: -5px;
+     border-radius:100%;
+    height: 5vh;
+    border: none;
+    cursor: pointer;
+    background: #ad5389; 
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389); 
+    background: linear-gradient(to right, #3c1053, #ad5389);
+    color: var(--primary-color-light);
+} 
+section form input[type="button"]:hover{
+    background: #20002c; 
+    background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  
+    background: linear-gradient(to right, #cbb4d4, #20002c); 
+}
+.my_form{
+    width: 100%;
+}
+/* .parentDiv{
+    background: #373B44; 
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44); 
+    background: linear-gradient(to right, #4286f4, #373B44); 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 3vw 0 3vw;
+    min-height:40vh;
+    max-height: fit-content;
+    width:95%;
+    } */
+

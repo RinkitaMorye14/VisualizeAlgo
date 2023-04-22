@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Algo Visualizer</title>
+    <script src="js/module.js" type="module"></script>
+  </head>
+  <body
+  >
+    <!-- style="
+      background: url('image/bg_login.jpg') no-repeat center center fixed;
+      background-size: cover;
+    " -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">AlgoVisulizer</a>
+        </div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu open">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#" class="action_btn">Get Started</a></li>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>Welcome</h1>
+        <p>Visualize Algo here</p>
+        <input type="button" id="signin" class="action_btn" value="Sign In" />
+      </section>
+    </main>
+
+    <script type="module" src="js/index.js"></script>
+
+    <script>
+      const toggle_btn = document.querySelector(".toggle_btn");
+      const toggle_btnicon = document.querySelector(".toggle_btn i");
+      const dropdown_menu = document.querySelector(".dropdown_menu");
+      toggle_btn.onclick = function () {
+        dropdown_menu.classList.toggle("open");
+        const isOpen = dropdown_menu.classList.contains("open");
+        toggle_btnicon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parentDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    padding: auto;
+}
+
+.parentsk{
+  margin:32% 6%;
+  display:flex;
+  justify-content: center;
+  width: 100%;
+}
+.parentsc{
+    margin:16% 6%;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+.parentsc .blockDiv{
+    display: inline-block;
+    margin-left: 0.4vw;
+    margin-top: 0vh;
+    background-color: #695CFE;
+
+}
+.parentsk .blockDiv{
+   display: inline-block;
+   margin-left:1vw;
+   /* border: 1px solid black; */
+   justify-content: center;
+   align-items: center;
+   margin-top: 1vh;
+   background-color: #695CFE;
+}
+.parent .searchsk{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   background-color: #9289f1;
+}
+.parentDiv .searchsk .SearchBlock{
+   margin-left:100px;
+   position: absolute;
+   left: 99px;
+   bottom: 190px;
+   background-color: #9289f1;
+}
+.blockText , .searchText{
+    display: flex;
+    font-size:4vh;
+    justify-content: center;
+    align-items: center;
+    margin-top:1vh;
+    text-align: center;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.562);
+    /* font-family: 'Poppins', sans-serif; */
+    font-style: italic;
+}
+.highlight{
+    background-color: aqua;
+}
+.searchHighlight{
+    background-color: blueviolet;
+}
+.dir span{
+    background-color: antiquewhite;
+    color: black;
+    position: absolute;
+    top: 34vh;
+    left: 10vh;
+    width: 20vw;
+    margin-right: 10vw;
+    font-size: 1.5vh;
+}

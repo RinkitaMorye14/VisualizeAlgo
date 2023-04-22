@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bubble.css" />
+    <link rel="stylesheet" href="css/firstpage.css" />
+    <link rel="stylesheet" href="css/chat.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <header>
+        <div class="image_text">
+          <span class="image">
+            <a href="index.html"><img src="image/logo.png" alt="" /></a>
+          </span>
+
+          <div class="text header_text">
+            <span class="name" id="name">Algo Visualizer</span>
+            <span class="work" id="work">Make Algo work</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu_bar">
+        <div class="menu">
+          <ul class="menu_links">
+            <li class="nav_link" style="background-color:#b5b0ec; border-radius: 6px;" >
+              <a href="firstpage.html" id="">
+                <i class="bx bxs-home icon" style="color:#fff;"></i>
+                <span class="text nav_text" style="color:#fff;" >Home</span>
+              </a>
+              <span class="tooltip">Home</span>
+            </li>
+            <li class="nav_link">
+              <a href="#" id="sort_link">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav_text">Sort</span>
+              </a>
+              <span class="tooltip">Sort</span>
+            </li>
+
+            <li class="nav_link">
+              <a href="#" id="search_link">
+                <i class="bx bx-search icon"></i>
+                <span class="text nav_text">Search</span>
+              </a>
+              <span class="tooltip">Search</span>
+            </li>
+
+            <li class="nav_link">
+              <a href="list.html" id="">
+                <i class="bx bx-list-minus icon"></i>
+                <span class="text nav_text">list & stack</span>
+              </a>
+              <span class="tooltip">list & stack</span>
+            </li>
+
+            <li class="nav_link">
+              <a href="" id="">
+                <i class="bx bxs-phone-call icon"></i>
+                <span class="text nav_text">Contact</span>
+              </a>
+              <span class="tooltip">Contact Us</span>
+            </li>
+
+            <li class="nav_link">
+              <a href="" id="">
+                <i class="bx bxl-periscope icon"></i>
+                <span class="text nav_text">About</span>
+              </a>
+              <span class="tooltip">About</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom_content">
+          <!-- Profile LI -->
+            
+          <!--Profile LI-->
+          <li class="" >
+            <a href="#" id="signout">
+              <i class="bx bx-log-out icon"></i>
+              <span class="text nav_text">Signout</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <div class="sun_moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode_text text">Dark mode</span>
+
+            <div class="toggle_switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section class="home" id="home">
+      <h1 class="change_title">Home</h1>
+      <form class="select_id">
+        <label for="pet_select">Select Algorithm:</label>
+        <select name="algo" class="select_algo">
+          <option value="">--Please choose an option--</option>
+          <!-- Options for Sort -->
+          <optgroup label="Sort" id="sort_options">
+            <option class="option_ele" value="Bubble_sort" id="bubble_sort_link">
+              Bubble Sort
+            </option>
+            <option class="option_ele" value="Selection Sort" id="selection_sort_link">
+              Selection Sort
+            </option>
+            <option class="option_ele" value="Insertion Sort" id="insertion_sort_link">
+              Insertion Sort
+            </option>
+            <option class="option_ele" value="Quick Sort" id="quick_sort_link">Quick Sort</option>
+          </optgroup>
+          <!-- Options for Search -->
+          <optgroup label="Search" id="search_options">
+            <option value="Linear_search" id="Linear_search">
+              Linear Search
+            </option>
+            <option value="Binary_search" id="Binary_search">
+              Binary Search
+            </option>
+          </optgroup>
+          <optgroup label="List & Stack">
+            <option value="list.html" id="list_stack">
+              <!-- <a href="list.html" id=""> -->
+                  List & Stack
+                 <!-- </a> -->
+            </option>
+            </optgroup>
+        </select>  
+      </form>
+      <div class="parentDiv" id="parentDiv"></div>
+      <div class="all_controls">
+        <label for="customRange1" class="form_label">Speed</label>
+        <input type="range" class="form_range" id="customRange1" />
+        <img
+          src="image/goToBeginning.png"
+          class="btn face_left"
+          id="back_btn"
+          alt="Previous"
+        />
+        <img
+          src="image/play.png"
+          class="startbtn btn"
+          id="startbtn"
+          alt="Start"
+        />
+        <img
+          src="image/pause.png"
+          class="stopbtn btn"
+          id="stopbtn"
+          alt="Stop"
+          style="display: none"
+        />
+        <img src="image/goToEnd.png" class="btn" id="forward_btn" alt="Next" />
+      </div>
+    </section>
+    <div class="chat" id="chat">
+      <span class="chat_title">DOUBTS ! Ask Community :) </span>
+      <div class="msg" id="msg_block">
+        <!-- <div class="guest">
+          <!-- <span class="üser_name">Aishwarya</span>
+          <span class="msg">Hello msg from unknown</span>
+        </div>
+        <div class="user">
+          <span class="üser_name">Rinkita</span>
+          <span class="msg">Hey, How are you ?</span>
+        </div>
+        <div class="user" >
+          <span class="üser_name">Rinkita</span>
+          <span class="msg">I am fine</span>
+        </div>
+        <div class="guest">
+          <span class="üser_name">Nikita</span>
+          <span class="msg">New Msg1</span>
+        </div> -->
+      </div>
+      <div class="msg_input">
+        <form>
+          <input type="text" id="msg_ip" name="msg_ip" placeholder="Type..." />
+          <input type="button" value="Send" id="sendMsg" />
+          <input type="button" value="Send" id="signin" style="display: none;"/>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/index.js"></script>
+    <script src="js/bubble.js"></script>
+    <script src="js/insertion.js"></script>
+    <script src="js/linearS.js"></script>
+    <script src="js/binaryS.js"></script>
+    <script src="js/firstpage.js"></script>
+    <!-- <script src="js/sendMsg.js"></script> -->
+  </body>
+</html>

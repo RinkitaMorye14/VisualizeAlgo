@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+.home h2{
+        font-family: 'Labrada', serif;
+        color:var(--text-color);
+}
+section .parentDiv{
+    background: var(--primary-color-light);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 0 0 4.3vw;
+    min-height:40vh;
+    height:fit-content;
+    width: 50vw;
+    }
+.sidebar.close ~ section .parentDiv{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        width: 61vw;
+        height:fit-content;
+    }
+.parentDiv img{
+    height:70vh;
+    width: 50vw;
+    border-radius: 20vh;
+}
+section form{
+    width:max-content;
+    margin:2vh 0vw 5vh 5vw;
+}
+section form p{
+    margin: 1vh 0;
+    color: var(--text-color);
+}
+section form input{
+    position: relative;
+    display: inline-block;
+    /* font-size:10px; */
+    box-sizing: border-box;
+    transition: var(--tran-05);
+}
+section form input[type="text"]
+{
+    background-color: #fff;
+    width:40vw;
+    height: 5vh;
+    outline: none;
+    padding: 0 25px;
+    /* border-radius: 25px 0 0 25px; */
+}
+.sidebar.close ~ section form input[type="text"]
+{
+    background-color: #fff;
+    width:50vw;
+    height: 5vh;
+    outline: none;
+    padding: 0 25px; 
+}
+section form input[type="button"]
+{
+    position: relative;
+    left: -5px;
+    height: 5vh;
+    width: 10vw;
+    border: none;
+    cursor: pointer;
+    background-color: #1565C0;
+    color: var(--primary-color-light);
+} 
+section form input[type="button"]:hover{
+   transition: var(--tran-05);
+   color: var(--text-color);
+}
+.innerDiv {
+    width: 30px;
+    margin: 12px;
+    margin-left: 20px;
+    display: inline-block;
+    background-color: #ccc;
+    border: 1.5px solid #0e0707;
+    border-radius: 5px;
+    position: relative; 
+}
+.innerText {
+    font-size: 14px;
+    position: absolute; 
+    /* bottom: 20px; */
+    justify-content: center;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+.valueDiv {
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+}
+.swapping{
+    box-shadow: 0px 0px 20px #f1c40f;
+}
+.com_swapping{
+    box-shadow: 0px 0px 20px #f1570f;
+}
+/*======================== buttons replaced with icons ========================*/
+.all_controls{
+ height:3vw;
+ display: flex;
+ margin: 1vw 2vw 2vh 4.3vw;
+ width: 50vw;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 4vh;
+}
+.sidebar.close ~ section .all_controls{
+ width:61vw;
+}
+/* .all_controls .face_left{
+    transform: rotate(180deg);
+} */
+.all_controls .btn:hover{
+    /* background-color: #FFF;
+    border-radius: 1vh;
+    transition: var(--tran-04); */
+}
+.form_label{
+    padding-right: 10px;
+}
+.form_range{
+    width:80px;
+}
+.btn{
+    height:20px;
+    width: 20px;
+    color: var(--primary-color);
+    margin:0 8vh;
+    filter: invert(42%);
+}
+/* body.dark ~ section .all_controls .btn
+{
+    height:20px;
+    width: 20px;
+    color: #ccc;
+    margin:0 8vh;
+    filter: none;
+    background-color: #695CFE;
+} */
+.text_instr{
+    background-color:var(--sidebar-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    max-height:20vh;
+    width:50vw;
+    /* border: solid black 2px; */
+    font-size: 2vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    margin: 0 0 0 4.3vw;
+}
+.sidebar.close ~ section .form_range{
+    width: 170px;
+}
+.sidebar.close ~ section .text_instr{
+    width: 61vw;
+}
+.chat{
+    position: relative;
+    left: 75%;
+    width:25%;
+    height: 100vh;
+    background: #b92b27; 
+    /* background: -webkit-linear-gradient(to right, #1565C0, #b92b27); 
+    background: linear-gradient(to right, #1565C0, #336daf);  */
+    color: #FFF;
+    display: flex;
+    z-index: 100;
+} 
+.chat p{
+    position: absolute;
+}
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1678526355 svg {
+        width: calc(184% + 1.3px);
+        height: 259px;
+    }
+}

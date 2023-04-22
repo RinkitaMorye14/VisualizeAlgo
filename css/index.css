@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    background-color:rgba(68, 71, 71, 0.2);
+    box-shadow: 0 0 5px 0 rgb(33, 32, 32);
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.logo{
+    width: 30%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1vw;
+    padding-left:1vw;
+    text-shadow: 2px 3px 3px rgb(33, 32, 32);
+}
+.menu{
+    text-transform: uppercase;
+    width: 40%;
+    padding-right: 20px;
+}
+
+.menu ul{
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul li{
+    font-family: 'PT Sans', sans-serif;
+    list-style: none;
+    font-size: 1.5vw;
+    font-weight: 900;
+    text-shadow: 1px 0 3px rgb(74, 72, 72);
+    cursor: pointer;
+}
+
+.menu ul li:hover{
+    color: #BE93C5;  /* fallback for old browsers */
+    font-size: 2vw;
+    animation: gradient 10s linear infinite;
+
+
+}
+
+.menu ul li:first-child {
+    color: #BE93C5;  /* fallback for old browsers */
+    color: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+section{
+    /*background: #C33764;  
+    background: -webkit-linear-gradient(-45deg, #1D2671, #C33764); 
+    background: linear-gradient(-45deg, #1D2671, #C33764, #333399,#89fffd, #F7971E,#333399,#780206,#061161);*/
+
+
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(-45deg, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-45deg, #1D2671, #C33764, #333399,#89fffd,#333399,#780206,#061161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    background-size: 400% 400%;
+    width: 100%;
+    /* display: grid; */
+    /* place-items: center; */
+    text-align: center;
+    position:relative;
+    overflow: hidden;
+    border: none;
+    height: 100Vh;  
+    animation: gradient 10s linear infinite;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.center-contents{
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15vh;
+    text-shadow: 3px 1px 2px rgb(74, 72, 72);
+    text-transform: capitalize;
+    width: 100%;
+    line-height: 0;
+}
+.center-contents h2 {
+    padding-top: 6rem;
+    font-weight: 600;
+    font-size: 3vw;
+    letter-spacing: 3px;
+    padding-bottom: 3rem;
+}
+.center-contents h1 {
+    font-family: 'Montserrat', sans-serif;
+    /* text-transform: uppercase; */
+    padding: 22px;
+    font-weight: 500;
+    font-size: 4vw;
+    line-height: 1;
+}
+.center-contents p{
+    font-size: 1.2vw;
+    font-family: 'Merriweather', serif;
+    font-weight:bold,italic;
+    /* background-color: #7a7ae6;
+    background-color: #BE93C5,#113361; */
+    padding-bottom: 1.6rem;
+    padding-top: 1.6rem;
+}
+button {
+    
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    padding: 10px 60px;
+    color: rgb(24, 22, 22);
+    text-transform: capitalize;
+    border: none;
+    box-shadow: 1px 2px 3px 0 black;
+    opacity: 0.8;
+    font-size: 2.5vh;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+button:hover{
+    background: linear-gradient(75deg,rgb(110, 107, 107),rgb(230, 219, 219),rgb(110, 107, 107));
+}
+.learn{
+    padding-right:10rem ;
+}
+.signup{
+    background-color:#BE93C5;
+    color: white;
+}
+.word:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color:#061161;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes changetext{
+    0%{ content: "Learning is always a journey, let's explore!";}
+    20%{content: "Learning is always a rollercoaster, let's ride!";}   
+    35%{content: "Learning is always a puzzle, let's solve it!";}    
+    50%{content: "Learning is always a treasure hunt, let's discover!";}    
+    75%{content: "Learning is always a safari, let's observe!";}    
+    100%{content: "Learning is always a game, let's play!"}    
+}
+/* Learning is always a journey, let's explore!
+Learning is always a rollercoaster, let's ride!
+Learning is always a puzzle, let's solve it!
+Learning is always a treasure hunt, let's discover!
+Learning is always a safari, let's observe!
+Learning is always a game, let's play! */
+
+.custom-shape-divider-bottom-1678526408 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1678526408 svg {
+    position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 310px;
+}
+
+.custom-shape-divider-bottom-1678526408 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.contact_icon{
+    padding-left:0;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1678526355 svg {
+        width: calc(184% + 1.3px);
+        height: 259px;
+    }
+}
